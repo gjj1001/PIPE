@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    
+                android:id="@+id/xunjian_popwindow"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"                
+                android:layout_margin="10dp"
+                android:background="@color/huibai"
+                android:orientation="vertical"                
+                
+    >
+    
+    
+    
+  
+
+    <RelativeLayout
+        android:id="@+id/xunjian_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/shenlan"
+      android:padding="2dp"
+        android:orientation="horizontal" >
+
+
+
+
+    <ImageView
+        android:id="@+id/image_xunjianinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xunjian_title"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/info3"
+        android:paddingRight="5dp" />
+
+
+        <TextView
+            android:id="@+id/description_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/image"
+            android:layout_alignParentLeft="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:text="巡检任务"
+            android:textColor="@color/huibai" />
+
+
+
+        <ImageView
+            android:id="@+id/image_xunjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignRight="@+id/xunjian_title"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/close"
+            android:paddingRight="5dp" />
+
+    </RelativeLayout>
+
+
+ <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_margin="5dp"        
+        android:layout_height="fill_parent" 
+        android:alpha="0.8"
+        android:visibility="gone"
+        android:background="@color/baise"
+        
+        >
+
+
+               <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" >
+
+          <Button
+                android:id="@+id/button_chakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"  
+                android:background="@drawable/state_btn_pressed"
+                android:text="查看任务"
+                 />
+            
+        </TableRow>   
+        
+    </TableLayout>
+
+
+            
+      
+
+</LinearLayout>

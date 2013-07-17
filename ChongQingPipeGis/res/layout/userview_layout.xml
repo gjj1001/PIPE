@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   
+    
+                android:id="@+id/pointquery_popwindow"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                
+                android:layout_margin="10dp"
+                android:background="@color/huibai"
+                android:orientation="vertical"                
+                
+    >
+    
+    
+    
+  
+
+    <RelativeLayout
+        android:id="@+id/pointquery_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/shenlan"
+      android:padding="2dp"
+        android:orientation="horizontal" >
+
+
+
+
+    <ImageView
+        android:id="@+id/image_shijianinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/xunjian_title"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/info3"
+        android:paddingRight="5dp" />
+
+
+        <TextView
+            android:id="@+id/description_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/image"
+            android:layout_alignParentLeft="false"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="32dp"
+            android:text="用户信息"
+            android:textColor="@color/huibai" />
+
+
+
+        <ImageView
+            android:id="@+id/image_shijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentTop="false"
+            android:layout_alignRight="@+id/xunjian_title"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/close"
+            android:paddingRight="5dp" />
+
+    </RelativeLayout>
+
+
+ <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_margin="5dp"        
+        android:layout_height="fill_parent" 
+        android:alpha="0.8"
+        android:background="@color/baise"
+        
+        >
+
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="fill_parent"
+            android:layout_margin="5dp"   
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525252"
+                
+                android:text="用户名：" />
+
+            <EditText
+                android:id="@+id/editText_quyuid"
+                android:layout_width="wrap_content"
+                android:textColor="#525252"
+               
+                android:layout_height="35dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="admin"  
+                android:background="@drawable/yuanjiaoshape"                 
+                android:ems="10" />
+        </TableRow>
+
+
+        
+        <TableRow
+            android:id="@+id/tableRow23"
+            android:layout_width="fill_parent"
+            android:layout_margin="5dp"
+   
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525252"
+                
+                android:text="姓名：" />
+
+            <EditText
+                android:id="@+id/editText_quyuid3"
+                android:layout_width="wrap_content"
+                android:textColor="#525252"
+               
+                android:layout_height="35dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="xx"  
+                android:background="@drawable/yuanjiaoshape"                 
+                android:ems="10" />
+        </TableRow>
+        
+                
+        
+          <TableRow
+            android:id="@+id/tableRow24"
+            android:layout_width="fill_parent"
+            android:layout_margin="5dp"   
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525252"                
+                android:text="邮箱：" />
+
+            <EditText
+                android:id="@+id/editText_quyuid4"
+                android:layout_width="wrap_content"
+                android:textColor="#525252"               
+                android:layout_height="35dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="defeew@126.com"  
+                android:background="@drawable/yuanjiaoshape"                 
+                android:ems="10" />
+        </TableRow>
+        
+          
+         
+          <TableRow
+            android:id="@+id/tableRow25"
+            android:layout_width="fill_parent"
+            android:layout_margin="5dp"   
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#525252"                
+                android:text="电话：" />
+
+            <EditText
+                android:id="@+id/editText_quyuid5"
+                android:layout_width="fill_parent"
+                android:textColor="#525252"               
+                android:layout_height="35dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="1304524788"  
+                android:background="@drawable/yuanjiaoshape"                 
+                android:ems="10" />
+        </TableRow>
+         
+       
+         <TableRow
+            android:id="@+id/tableRow511"
+            android:layout_width="fill_parent"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            android:background="@drawable/zanwu"
+            android:layout_height="160dip" >
+
+          <ImageView   
+            android:id="@+id/zhaopianimageView"  
+            android:contentDescription="dd"         
+            android:layout_span="2"                
+            android:layout_width="fill_parent"  
+            android:layout_height="170dip"  />
+            
+        </TableRow>           
+         
+
+               <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="fill_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content" >
+            
+       
+
+          <Button
+                android:id="@+id/button_dingwei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/state_btn_pressed"
+                android:layout_span="2"  
+                android:text="修改"/>
+            
+        </TableRow>    
+             
+        
+          
+        
+    </TableLayout>
+
+
+      
+      
+
+</LinearLayout>

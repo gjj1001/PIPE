@@ -1,0 +1,612 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    
+    
+    <com.esri.android.map.MapView
+        android:id="@+id/map"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </com.esri.android.map.MapView>
+
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        
+        <!-- ////////顶部页面//////////////////// -->
+        <LinearLayout
+            android:id="@+id/main_top"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/top02" >
+              <LinearLayout
+                  android:id="@+id/linearLayout_topleftbg"
+                  android:layout_width="wrap_content"
+                  android:layout_height="match_parent"
+                  android:layout_weight="1"
+                  android:background="@drawable/top01" >
+
+                   <ImageView
+                       android:id="@+id/imageView_logo"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingLeft="5dip"
+                       android:paddingRight="10dip"
+                       android:scaleType="fitXY"
+                       android:src="@drawable/logo" />
+
+                   <LinearLayout
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:paddingTop="5dip"
+                       android:orientation="vertical" >
+                       
+                       <TextView
+                           android:id="@+id/textView_title"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/app_name"
+                           android:textAppearance="?android:attr/textAppearanceLarge"
+                           android:textColor="@color/shenlan"
+                           android:textSize="20dip" />
+                       <TextView
+                           android:id="@+id/textView3"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="@string/app_name_en"
+                           android:textColor="@color/qianlan"
+                           android:textSize="9dip" />
+
+                   </LinearLayout>
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6" >
+                <Button
+                    android:id="@+id/button_chaxuntongji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/top_btn"
+                    android:drawableTop="@drawable/chaxuntongji1"
+                    android:padding="5dp"
+                    android:text="@string/button_chaxuntongji"
+                    android:textColor="@color/huibai"
+                    android:textSize="14dip" />
+                <Button
+                    android:id="@+id/button_xunjianrenwu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/top_btn"
+                    android:drawableTop="@drawable/xunjianrenwu"
+                    android:padding="5dp"
+                    android:text="@string/button_xunjianrenwu"
+                    android:textColor="@color/huibai"
+                    android:textSize="14dip" />
+
+                  <Button
+                      android:id="@+id/button_shijianshangbao"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="15dp"
+                      android:background="@drawable/top_btn"
+                      android:drawableTop="@drawable/shijianshangbao"
+                      android:padding="5dp"
+                      android:text="@string/button_shijianshangbao"
+                      android:textColor="@color/huibai"
+                      android:textSize="14dip" />
+
+             <Button
+                 android:id="@+id/button_xitongshezhi"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginRight="15dp"
+                 android:background="@drawable/top_btn"
+                 android:drawableTop="@drawable/xitongshezhi"
+                 android:padding="5dp"
+                 android:text="@string/button_xitongshezhi"
+                 android:textColor="@color/huibai"
+                 android:textSize="14dip" />
+                  
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginRight="0dip"
+                android:layout_weight="1"
+                android:gravity="right" >
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/top05" />
+
+                  <LinearLayout
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/top07"
+                      android:gravity="center_vertical" >
+                       
+                          <TextView
+                              android:id="@+id/textView_userinfo"
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:layout_gravity="bottom|center"
+                              android:paddingBottom="5dip"
+                              android:text="当前用户：Admin123456"
+                              android:textColor="@color/qianlan"
+                              android:textSize="12dip" />
+                      
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/top08" />
+            </LinearLayout>
+        </LinearLayout>
+  <!-- ////////以上为顶部页面//////////////////// --> <!-- ////////以下为中间页面//////////////////// -->
+ 
+ 
+        <RelativeLayout
+            android:id="@+id/main_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/main_top"
+            android:layout_margin="0dp" >
+     
+        <LinearLayout
+                android:id="@+id/main_leftall123"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"  
+                android:visibility="visible"
+                android:orientation="vertical" >
+                    
+             
+            
+            
+            
+            
+            
+                <!-- 查询统计 -->   
+              
+            <LinearLayout
+                android:id="@+id/main_left_chaxun"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                
+                android:background="@drawable/left13"
+                android:orientation="vertical" >
+
+                
+                    
+                       
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:background="@drawable/left11"
+                       android:gravity="center" >                       
+
+
+                         <TextView
+                             android:id="@+id/textView_leftTitle"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:text="查询统计"
+                             android:textAppearance="?android:attr/textAppearanceLarge"
+                             android:textColor="@color/shenlan"
+                             android:textSize="14dip" />
+                         
+                       </LinearLayout>
+
+
+                    <Button
+                    android:id="@+id/button_dingwei"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftbtnbg"
+                    android:drawableLeft="@drawable/leftdian"
+                    android:paddingLeft="20dip"
+                    android:text="定位查询"
+                    android:textColor="@color/shenhui"
+                    android:textSize="12dip" />
+
+                    <Button
+                    android:id="@+id/button_dianxuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftbtnbg"
+                    android:drawableLeft="@drawable/leftdian"
+                    android:paddingLeft="20dip"
+                    android:text="点选查询"
+                    android:textColor="@color/shenhui"
+                    android:textSize="12dip" />
+                
+                
+                   <Button
+                    android:id="@+id/button_kuangxuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftbtnbg"
+                    android:drawableLeft="@drawable/leftdian"
+                    android:paddingLeft="20dip"
+                    android:text="框选查询"
+                    android:textColor="@color/shenhui"
+                    android:textSize="12dip" />
+                
+                
+                    <Button
+                    android:id="@+id/button_juliliangsuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftbtnbg"
+                    android:drawableLeft="@drawable/leftdian"
+                    android:paddingLeft="20dip"
+                    android:text="距离量算"
+                    android:textColor="@color/shenhui"
+                    android:textSize="12dip" />
+                
+                
+                    <Button
+                    android:id="@+id/button_mianji"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftbtnbg"
+                    android:drawableLeft="@drawable/leftdian"
+                    android:paddingLeft="20dip"
+                    android:text="面积量算"
+                    android:textColor="@color/shenhui"
+                    android:textSize="12dip" />
+                
+                    <Button
+                    android:id="@+id/button_buffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftbtnbg"
+                    android:drawableLeft="@drawable/leftdian"
+                    android:paddingLeft="20dip"
+                    android:text="缓冲分析"
+                    android:textColor="@color/shenhui"
+                    android:textSize="12dip" />
+
+            </LinearLayout>
+            
+     
+      
+     
+     
+       <!-- 系统设置 -->     
+            
+    <LinearLayout
+                android:id="@+id/main_left_shezhi"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+               
+                android:visibility="gone"
+                android:background="@drawable/left13"
+                android:orientation="vertical" >
+
+
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:background="@drawable/left11"
+                       android:gravity="center" >
+                       
+
+
+                         <TextView
+                             android:id="@+id/textView_leftTitle2"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:text="系统设置"
+                             android:textAppearance="?android:attr/textAppearanceLarge"
+                             android:textColor="@color/shenlan"
+                             android:textSize="14dip" />
+                         
+                       </LinearLayout>
+
+
+                    <Button
+                    android:id="@+id/button_userinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftbtnbg"
+                    android:drawableLeft="@drawable/leftdian"
+                    android:paddingLeft="20dip"
+                    android:text="用户信息"
+                    android:textColor="@color/shenhui"
+                    android:textSize="12dip" />
+
+                    <Button
+                    android:id="@+id/button_shebeiinfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftbtnbg"
+                    android:drawableLeft="@drawable/leftdian"
+                    android:paddingLeft="20dip"
+                    android:text="设备信息"
+                    android:textColor="@color/shenhui"
+                    android:textSize="12dip" />
+                
+                
+                   <Button
+                    android:id="@+id/button_mapset"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftbtnbg"
+                    android:drawableLeft="@drawable/leftdian"
+                    android:paddingLeft="20dip"
+                    android:text="地图设置"
+                    android:textColor="@color/shenhui"
+                    android:textSize="12dip" />
+                   
+                   
+                         <Button
+                    android:id="@+id/button_exit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/leftbtnbg"
+                    android:drawableLeft="@drawable/leftdian"
+                    android:paddingLeft="20dip"
+                    android:text="退出系统"
+                    android:textColor="@color/shenhui"
+                    android:textSize="12dip" />
+                
+                
+                    
+
+            </LinearLayout>
+ 
+  <!-- 系统设置     完 -->   
+  
+  
+        </LinearLayout>
+        
+            
+          
+ 
+   <!-- 
+   /////////////////////////以上是总的left////////////////////////////
+    -->
+            
+            
+     
+            
+ 
+   <!-- ///////////////////////////////////////// -->         
+            
+   
+      
+      
+            
+            
+            
+            
+     
+            
+            <LinearLayout
+                android:id="@+id/linearlayout_mapcontrol"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0.9"
+                android:gravity="right|center_vertical"
+                android:orientation="vertical"
+                android:paddingRight="20dip"
+                android:paddingTop="10dip" >
+                       
+                    <Button
+                    android:id="@+id/imageView_fangda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                   
+                    android:background="@drawable/top_btn2"
+                    android:drawableTop="@drawable/fangda"                   
+                    android:text="放大"
+                    android:textColor="@color/qianlan"
+                    android:textSize="12dip" />
+                          
+                     
+                        
+                    <Button
+                    android:id="@+id/imageView_suoxiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:background="@drawable/top_btn2"
+                    android:drawableTop="@drawable/suoxiao"                   
+                    android:text="缩小"
+                    android:textColor="@color/qianlan"
+                    android:textSize="12dip" />
+                        
+      
+                         
+                    <Button
+                    android:id="@+id/imageView_quantu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                    
+                    android:background="@drawable/top_btn2"
+                    android:drawableTop="@drawable/quantu"                   
+                    android:text="全图"
+                    android:textColor="@color/qianlan"
+                    android:textSize="12dip" />
+                    
+                    <Button
+                    android:id="@+id/imageView_qingchu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"                  
+                    android:background="@drawable/top_btn2"
+                    android:drawableTop="@drawable/suaxin"                    
+                    android:text="清除"
+                    android:textColor="@color/qianlan"
+                    android:textSize="12dip" />
+                                                    
+                         
+       
+                    
+                                <Button
+                                    android:id="@+id/imageView_qitade"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/top_btn2"
+                                    android:drawableTop="@drawable/zuoshitu"
+                                    android:text="上视图"
+                                    android:textColor="@color/qianlan"
+                                    android:textSize="12dip"
+                                    />
+                                
+                                   <Button
+                                    android:id="@+id/imageView_qitade2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/top_btn2"
+                                    android:drawableTop="@drawable/youshitu"
+                                    android:text="下视图"
+                                    android:textColor="@color/qianlan"
+                                    android:textSize="12dip"
+                                    />
+                      
+                </LinearLayout>
+                
+            
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/left14"
+                android:gravity="right"
+                android:orientation="vertical" >
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:id="@+id/imageView_leftshu"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"                
+                android:layout_alignParentTop="true"
+                android:background="@drawable/right14"
+                android:gravity="left"
+                android:visibility="gone"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+         
+            
+                        <LinearLayout
+                android:id="@+id/main_windows"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_below="@id/main_top"    
+                android:layout_marginLeft="12dp"            
+                android:layout_toRightOf="@id/main_leftall123" 
+                android:alpha="0.95" 
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+                        
+                        
+
+        </RelativeLayout>
+
+    
+        
+         <!-- ////////以下为底部页面//////////////////// -->
+        
+        <LinearLayout
+            android:id="@+id/main_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/shenlan" >
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom15" >
+
+                <TableRow
+                    android:id="@+id/tableRow1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal" >
+
+                    <ImageView
+                        android:id="@+id/imageView_bottom1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bottom11" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/bottom12" >
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bottom13" />
+
+                    <TextView
+                        android:id="@+id/textView_bottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="5"
+                        android:gravity="center_horizontal"
+                        android:text="版权所有  中科信息技术有限公司" />
+
+                    <ImageView
+                        android:id="@+id/imageView8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/bottom19" />
+
+                    <ImageView
+                        android:id="@+id/imageView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="0dip"
+                        android:paddingRight="0dip"
+                        android:src="@drawable/bottom21" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/image_left_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/main_bottom"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="40dp"
+            android:contentDescription="ddd"
+            android:src="@drawable/leftopen" />
+
+    </RelativeLayout>
+
+</FrameLayout>
